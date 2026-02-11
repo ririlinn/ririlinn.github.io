@@ -2,92 +2,141 @@
 
 <html>
   <head>
-    <title>Sample Web Page</title>
+    <title>Frannie's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div> 
-    |   <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
+<body id="top">
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+
+    <!-- Logo Container (flex container) -->
+    <div class="logo-container">
+      <img src="logo_100.png" alt="Logo">
+      <h3 class="logo-text">RiRi's Space</h3>
     </div>
+
+    <!-- Navigation (flex container) -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-  </body>
+  </header>
 
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+
+    <!-- Hero Text (flex item) -->
+    <div class="hero-text">
+      <h2>
+        Hi! Welcome to
+      </h2>
+      <h1>
+        FRANNIE's SPACE <br>
+      </h1>
+
+      <p>
+        Computer Science student passionate about clean code, problem solving,
+        and building meaningful digital experiences.
+      </p>
+    </div>
+
+    <!-- Hero Image (flex item) -->
+    <div class="hero-image">
+      <img src="ftandang.png" alt="Profile Photo">
+    </div>
+
+  </section>
+
+  <!-- ================= PREVIOUS PROJECTS ================= -->
+  <section class="projects" id="projects">
+  <h2>Previous Projects</h2>
+
+  <div class="project-list">
+
+    <div class="project-card">
+      <h3>CMSC 22 Project</h3>
+      <p>
+        This project is a storefront project. A user can be a seller or a buyer,
+        where buyers can buy items and sellers can sell items to buyers.
+      </p>
+      <div class="project-card">
+        <img src="CMSC22_Proj.PNG" alt="CMSC 22 Project">
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>CMSC 12 Project</h3>
+      <p>
+        This exercise is an HTML + CSS output that shows a customer details form
+        before they buy.
+      </p>
+      <div class="project-card">  
+        <img src="CMSC12_Proj.PNG" alt="CMSC 12 Project">
+      </div>  
+    </div>
+
+    <div class="project-card">
+      <h3>CMSC 150 Project</h3>
+      <p>
+        This application helps users explore and optimize a city’s mitigation strategy by letting them choose from 30 available environmental projects and automatically solving a full minimization problem using the Simplex method.
+      </p>
+      <div class="project-card">
+        <img src="CMSC150_Proj.PNG" alt="CMSC 150 Project">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= SKILLS + AUTOBIOGRAPHY ================= -->
+  <section class="info">
+    <div class="skills">
+      <h2>Skills</h2>
+      <div class="skill">Multitasking</div>
+      <div class="skill">Backend Problem Solving</div>
+      <div class="skill">Attention to Details in Codes</div>
+      <div class="skill">Active Listening</div>
+      <div class="skill">Critical Thinking</div>
+    </div>
+
+    <div class="autobio" id="about">
+      <h2>Autobiography</h2>
+        <div class="me">Hi! I'm Frannieczeska Erene U. Tandang, a 20-year-old Bachelor of Science in Computer Science student at the University of the Philippines Los Baños. Growing up, I was always fascinated by how technology transforms the world, but it wasn't until I discovered the potential to integrate art into these innovations that my passion truly ignited. What started as curiosity about computers and gadgets evolved into a deep love for exploring their creative possibilities. When I learned that art could be seamlessly woven into emerging technologies—like through digital design, interactive media, or even AI-generated visuals—it sparked my interest in researching how to blend these fields. Now, as I study computer science, I'm diving into topics like computer graphics, user interface design, and creative coding, all while experimenting with tools such as Adobe Creative Suite and programming languages to bring artistic ideas to life.</div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+   <section class="contacts">
+      <div class="cntct" id="contact">
+        <h2>Contact Me</h2>
+        <h3>PHONE</h3>
+          <p>+63 9512316701</p>
+        <h3>SOCIAL MEDIA</h3>
+          <p>Facebook: Frannie Tandang </p>
+        <h3>EMAIL</h3>
+          <p>futandang@up.edu.ph</p>
+      </div>
+   </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="foot">
+    <div class="footer-logo">
+      <img src="logo_100.png" alt="Logo">
+    </div>
+
+    <div class="footer-text">
+      <p>M. Escobin St., Mayondon, Los Banos, Laguna, 4030</p>
+      <p>Email: futandang@up.edu.ph | Mobile No: 09512316701</p>
+      <p>© Copyright Information</p>
+      <a href="#top">Back to Top</a>
+    </div>
+  </footer>
+
+</body>
 </html>
